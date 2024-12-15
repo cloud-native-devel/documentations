@@ -122,7 +122,7 @@ systemctl enable kubelet --now
 kubeadm config print init-defaults --component-configs KubeProxyConfiguration,KubeletConfiguration > kubeadm.yaml
 ```
 #### 3.2.2. 修改集群配置
-修改刚才生成的 kubeadm.yaml 文件中的以下配置项，其中的 192.168.220.101 是当前主机的 ip 地址，根据自身情况进行修改
+修改刚才生成的 kubeadm.yaml 文件中的以下配置项，其中的 `192.168.220.101` 是当前主机的 ip 地址，根据自身情况进行修改
 ```bash
 localAPIEndpoint:
   advertiseAddress: 192.168.220.101
